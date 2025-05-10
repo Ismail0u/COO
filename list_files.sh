@@ -1,5 +1,5 @@
 #!/bin/bash
-# Exo 3: Liste tous les fichiers du répertoire courant
+# Exo 3 : Affiche la liste de tous les fichiers du répertoire courant
+# Objectif : Utilisation de la commande ls
 
-# -p ajoute "/" derrière les répertoires, -A affiche tout sauf . et ..
-ls -pA
+ls -l
