@@ -1,4 +1,5 @@
 #!/bin/bash
+# Exo 2: Affiche la date et l'heure actuelles au format YYYY-MM-DD HH:MM:SS
 
-# Ce script affiche la date et l'heure actuelle au format YYYY-MM-DD HH:MM:SS.
-date +"%Y-%m-%d %H:%M:%S"
+# On utilise la commande date avec le format personnalisé
+echo "Date et heure actuelles : $(date +"%Y-%m-%d %H:%M:%S")"
