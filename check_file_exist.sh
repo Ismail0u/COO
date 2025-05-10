@@ -5,7 +5,13 @@
 # Demande à l'utilisateur d'entrer le nom du fichier.
 read -p "Entrez le nom du fichier : " filename
 
-# Vérifie si le fichier existe (-f est une condition pour vérifier si c'est un fichier régulier).
+# Vérifie si l'entrée est vide
+if [ -z "$filename" ]; then
+  echo "Erreur : aucun nom de fichier fourni."
+  exit 1
+fi
+
+# Vérifie si le fichier existe
 if [ -f "$filename" ]; then
   echo "Le fichier '$filename' existe."
 else
